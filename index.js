@@ -8,7 +8,9 @@ app.use(status());
 
 
 app.get("/",(req,res)=>{
-
+fs.readFileSync("./openCv.js",(err,data)=>{
+res.end(data);
+})
 })
 
 
