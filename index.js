@@ -8,7 +8,7 @@ app.use(status());
 
 
 app.get("/",(req,res)=>{
-fs.readFileSync("./plain.txt",(err,data)=>{
+fs.readFile("./plain.txt",(err,data)=>{
 res.end(data);
 })
 })
